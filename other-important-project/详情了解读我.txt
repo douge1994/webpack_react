@@ -1,0 +1,45 @@
+此项目使用create-react-app构建
+其中包含的技术有：
+
+
+react
+react-router-dom
+react-redux / redux
+react-thunk
+路由按需加载
+
+
+src： 主项目录
+src下example系列文件夹（完整的demo）：
+    使用create-react-app命令创建react环境
+    替换react环境中src目录
+    提取出 当前src > example系列文件夹里面的index.js ;
+    放在react环境中src目录下即可运转当前目录下example项目
+
+当前index.js 所属为example8-project;
+example8-project说明：
+    1.actions----redux写的action
+    2.common----公共文件类
+    3.components----笨笨组件(就是纯渲染的组件)
+    4.containers----智能组件（逻辑业务...获取state或者为更改state提供方法->action...）
+    5.logs----该项目的旧文件
+    6.reducers----初始&&更改state并返还
+为了完成项目的流程。并为完全按照上方说明执行-----其中：将笨笨组件 也和 智能组件 放置在components 中
+
+着重说明下example8-project--- components :
+    Home.js 中重点是 按需加载 和 路由 以及 redux 使用(智能组件)--->按需加载效果可关注Test.js，其中使用了echart
+    Test.js 为了按需加载效果展示使用了echart
+    ReduxExample2.js 是一个使用redux 的笨笨组件（仅仅使用了props）
+    Bundle.js 按需加载的源文件....这个是大牛写的...哈哈哈啊
+    Login.js 登录使用的js文件---还是可以看看得^_^
+
+    ---建议阅读走向---
+    Index(reducers)--->App-->Login--->Home(Bundle)---->Test/ReduxExample2/Topic
+
+
+
+
+
+
+
+
