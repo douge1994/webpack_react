@@ -6,8 +6,8 @@ import { createLogger } from 'redux-logger'
 import { Provider, connect } from 'react-redux'
 import thunkMiddleware from 'redux-thunk'
 
-import counter from './example6-second-test/reducers/reducer1'
-import App from './example6-second-test/containers/App'
+import counter from './example6-async-thunk/reducers/reducer1'
+import App from './example6-async-thunk/containers/App'
 // React component
 /*class Counter extends Component {
     render() {
